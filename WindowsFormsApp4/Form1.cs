@@ -16,5 +16,29 @@ namespace WindowsFormsApp4
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+             if((txtusuario.Text != "")&&(txtcontra.Text != ""))
+            {
+                if ((txtusuario.Text == "juancho") && (txtcontra.Text == "123tamarindo"))
+                {
+                    this.Hide();
+                    Despues_dEntrar form2 = new Despues_dEntrar();
+                    form2.Show();
+
+                }
+            }
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
